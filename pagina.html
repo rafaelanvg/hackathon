@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+</head>
+
+<style>
+    /*RESET*/
+*{
+    margin: 0;  
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: Lucida Sans;
+    }
+
+    html {
+    scroll-behavior: smooth;
+    }
+
+    nav, ul{
+    list-style: none;
+    }
+    
+    a{
+    text-decoration: none;
+    font-weight: 700;
+    }
+    
+    a:hover{
+    opacity: 1;
+    }
+
+/* CSS DA HEADER */
+
+header{
+    width: 100%;
+    position:fixed;  
+    top: 0;
+    left: 0;    
+    display: flex;    
+    justify-content: space-between;    
+    align-items: center;    
+    padding: 20px 50px;    
+    background-color: black;
+    z-index: 1000;    
+    }
+    
+header img{    
+    width:100px;    
+    }
+    
+header li a{    
+    color: white;    
+    }
+    
+header li{   
+    margin: 10px 15px;   
+    float:left;   
+    }
+    
+header li:first-child{  
+    margin-left: 0;  
+    }
+    
+header li:last-child{   
+    margin-right: 0;
+    }
+    
+@media (max-width: 700px){    
+    header{flex-direction: column;}
+    header img {margin-bottom: 15px;}
+    
+    }
+
+    main{
+        padding:100px;
+        font-size:center;
+    }
+
+    body{
+        background-color: rgba(128, 128, 128, 0.171);
+        width: 100%;
+        margin-top: 200px;
+      }
+      .titulo {
+        font-size: 2.0em; 
+      margin-bottom: 15px;
+      text-align: center;
+      }
+      .subtitulo {
+        font-size: 1.5em; 
+      margin-bottom: 15px;
+      text-align: right;
+      }
+    .somos {
+    background-size: cover;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    opacity: 90%;
+    margin-left: 10%;
+    }  
+    .somos h2 {
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+    }
+    .somos h3 {
+    font-size: 1.2em; 
+    }
+    .somos p {
+    font-size: 1.0em;
+    margin-bottom: 5px;
+    color: black;
+    text-align: justify;
+    }
+
+</style>
+
+<!--HEADER-->
+
+<header>
+    <img src="img/logoGP.png" alt="grupo-petropolis" width="10%">
+    <nav>
+        <ul class="menuNav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Principal<span class="sr-only"></span></a>
+              </li> 
+            <li><a href="#somos">Valide seus GROPOINTS</a></li>
+            <li><a href="#somos2">Resgate seu Brinde</a></li>
+            <li><a href="#somos3">Painel Educacional</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+<main>
+   <div class="titulo" aling center> Olá Growther, seja bem vindo!</div>
+
+     <div class="subtitulo">Você tem um total de “X” GROPOINTS.</div><br><br>
+
+
+    <!--VALIDE-->
+    <section class="somos">
+        <h2 id="somos">Valide seus GROPOINTS</h2>
+        <p>Insira seu código recebido por SMS  e resgate seus pontos.</p><br>
+        <!-- <img src="img/pontuacao2.png" width="100%"><br><br> -->
+        
+    </section>
+     <!--RESGATE-->
+     <section class="somos">
+        <h2 id="somos2"> Resgate seu Brinde</h2>
+        <p>Insira seu código recebido por SMS  e resgate seus pontos.</p><br>
+        <h3>Resgate um acessório ou eletrônico</h3><br>
+        <p>A retirada será feita de acordo com a disponibilidade do material nas escolas e assistências técnicas parceiras. Confira o respectivo endereço.
+        </p><br>
+        <img src="img/pontuacao1.png" width="100%">
+        <img href="" class="btn">
+        <button class="btn btn-warning width=50px" href="">Selecionar Esse Brinde</button><br><br><br>
+        <img href="" class="btn"><br>
+        <h3>Cursos Oferecidos</h3><br>
+        <p>Você pode também escolher um curso oferecido pelas instituições parceiras na área do Painel Educacional.
+        </p><br><br><br>
+        
+        
+    </section>
+    <!--EDUCACIONAL-->
+    <section class="somos">
+        <h2 id="somos3">Painel Educacional</h2>
+        <p>A troca dos pontos para escolha dos cursos é o primeiro passo para sua capacitação. Fique atento e acompanhe as informações de cada curso e suas respectivas instituições.</p>
+        
+    </section>
+</main>
+  
+</body>
+</html>
